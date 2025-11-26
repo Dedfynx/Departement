@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu des départements</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<div id="sidebar">
+<h2>Retrouve le département</h2>
+<p id="question">Chargement...</p>
+<h3>Options</h3>
+<label>
+  <input type="checkbox" id="toggle-noms" checked>
+  Afficher les noms des départements
+</label>
+</div>
+
+
+<div id="carte"></div>
+</div>
+
+<script src="{{ url_for('static', filename='/script.js') }}"></script>
+
+</body>
+</html>

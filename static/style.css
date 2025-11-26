@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#carte {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#carte svg {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+}
+
+.dept {
+    fill: #e0e0e0;
+    stroke: #333;
+    stroke-width: 0.4;
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.dept:hover { fill: #b0b0ff; }
+.correct { fill: lightgreen !important; }
+.wrong { fill: red !important; }
